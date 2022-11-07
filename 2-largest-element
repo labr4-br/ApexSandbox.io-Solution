@@ -1,0 +1,9 @@
+public static Integer findLargest(List<Integer> nums) {
+	Integer larger = 0;
+    for(Integer num : nums){
+        if(num > larger){
+            larger = num;
+        }
+    }
+    return larger;
+}
