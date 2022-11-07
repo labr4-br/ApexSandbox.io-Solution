@@ -1,11 +1,10 @@
 public String aOrAn(String word) {
-    return applyRuleAnOrA(word) ? 'an ' + word : 'a ' + word
+    return applyRuleAnOrA(word) ? 'an ' + word : 'a ' + word;
 }
 
 public Boolean applyRuleAnOrA(String word){
-    String[] cs = new String<>('a', 'e', 'i', 'o', 'u');
-    Boolean snStarts;
-    for(String c : cs){
+    String[] chars = new String[]{'a', 'e', 'i', 'o', 'u'};
+    for(String c : chars){
         if(word.startsWith(c)){
             return true;
         }
