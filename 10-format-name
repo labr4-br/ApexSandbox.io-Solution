@@ -2,5 +2,5 @@ public String formatName(String firstName, String lastName) {
     if(!String.isEmpty(firstName) && !String.isEmpty(lastName)) return lastName+', '+firstName;
 	if(!String.isEmpty(firstName) && String.isEmpty(lastName)) return firstName;
     if(String.isEmpty(firstName) && !String.isEmpty(lastName)) return lastName;
-    return null;
+    return '';
 }
