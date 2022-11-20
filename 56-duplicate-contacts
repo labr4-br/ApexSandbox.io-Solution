@@ -1,0 +1,9 @@
+public Boolean duplicateContacts(Contact c1, Contact c2) {
+    if (validateIsNull(c1) || validateIsNull(c2)) return false;
+    if (c1.Email == c2.Email) return true;
+    if (c2.Phone == c2.Phone) return true;
+}
+
+private Boolean validateIsNull(Contact c){
+    return String.isEmpty(c.Email) || String.isEmpty(c.Phone);  
+}
